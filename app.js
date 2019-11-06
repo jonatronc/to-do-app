@@ -1,11 +1,11 @@
   function onReady() {
     const toDos = [];
-    const addToDoForm = document.getElementsById('addToDoForm');
+    const addToDoForm = document.getElementById('addToDoForm');
 
 
 
     function renderTheUI(){
-      const toDoList = document.getElementsById('toDoList');
+      const toDoList = document.getElementById('toDoList');
 
       toDoList.textContent = '';
 
@@ -22,7 +22,7 @@
     }
 
     function createNewToDo() {
-      const newToDoText = document.getElementsById('newToDoText');
+      const newToDoText = document.getElementById('newToDoText');
       if (!newToDoText.value){ return; }
 
       toDos.push({
